@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #919191;
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 0 90px 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+/*header*/
+header{
+    width: 980px;
+    height: 50px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header #grupo{
+    display: block;
+    float: left;
+    width: auto;
+    /*clear: right;*/
+}
+#grupo h1, #grupo h2{
+    margin: 0;
+}
+#grupo h1{
+    font-size: 2em;
+}
+#grupo h2{
+    font-size: 1em;
+}
+header #header-contato{
+    display: block;
+    float: right;
+    width: auto;
+    /*clear: right;*/
+}
+header #header-contato ul{
+    margin-top: 15px;
+}
+header #header-contato li{
+    display: inline-block;
+    border-left: 1px solid #C0BAB6;
+    padding: 0 0 0 15px;
+    margin: 0 0 0 15px;
+}
+header #header-contato li:first-child{/* primeiro item remover a barra e as margens*/
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+div#topo{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;   
+}
+#topo, #topo a{
+    color: #C0BAB6;
+    background-color: #333333;
+    text-decoration: none;
+}
+/*alinhar o icone ao texto, icone email e telefone*/
+span.material-icons{
+    vertical-align: middle;
+}
+
+/*menu*/
+a{
+    color: #FF9900;
+    text-decoration: none;
+}
+nav{
+    width: 980px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;    
+}
+nav ul{
+    margin: 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+nav li{
+    display: block;
+    float: left;
+    margin: 0 30px 0 0;
+}
+nav li a{
+    display: block;
+    padding: 20px 0;
+    font-weight: bold;
+}
+nav.home li.link_home a, nav a:hover{
+    color: #919191;
+}
+/*main*/
+main{
+    width: 980px;
+    height: 350px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+.sectionMai{
+    width: 200px;
+    height: 300px;
+    float: left;
+    border: 1px solid #CCC;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+.sectionMai h1{
+    text-align: center;
+}
+.sectionMai p{
+    line-height: 20px;
+    text-align: justify;
+}
+.sectionMai article{
+    height: 250px;
+}
+.sectionMai footer{
+    text-align: center;
+}
+/*botoes do main article*/
+.botao{
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .9em;
+    padding: 5px 15px;
+}
+a.botao{
+    color: #FFF;
+    border: 1px solid;
+}
+.botao.saiba_mais_caminhoes{
+    background: linear-gradient(to right, #C0E079, #98BA55);   
+    text-shadow: 1px 1px 0 #000;
+    border-radius: 5px;
+    border-color: #98Ba55;
+}
+.botao.saiba_mais_caminhoes:hover{
+    color: #7C9B41;
+    border-color: #7c9B41;
+}
+
