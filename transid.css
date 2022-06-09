@@ -6,43 +6,43 @@ body{
     background-color: #232323;
     font-family: Arial, Helvetica, sans-serif;
 }
-h1, h2, h3, h4, h5, h6{
-    margin: 0 0 0 90px 0;
-    font-size: 1.5em;
-    font-weight: normal;
+div#topo{
+    width: 100%;
+    height: auto;
+    border: 1px solid red; /*somente para visualizar, depois remover*/
 }
-/*header*/
 header{
     width: 980px;
     height: 50px;
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    grid-template-columns: 350px 630px;
+    border: 1px solid red; /*somente para visualizar, depois remover*/
 }
-header #grupo{
-    display: block;
-    float: left;
-    width: auto;
-    /*clear: right;*/
+header div{ /*somente para visualizar, depois remover*/
+    border: 1px solid black;
+    
 }
-#grupo h1, #grupo h2{
-    margin: 0;
+header #header-contato{
+    text-align: right;
 }
+/*inicio - configurar os h...*/
+h1, h2, h3, h4, h5, h6{
+    margin: 0 0 0 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
 #grupo h1{
     font-size: 2em;
 }
 #grupo h2{
     font-size: 1em;
 }
-header #header-contato{
-    display: block;
-    float: right;
-    width: auto;
-    /*clear: right;*/
-}
-header #header-contato ul{
-    margin-top: 15px;
-}
+/*fim - até aqui explicar de uma vez só*/
+
 header #header-contato li{
     display: inline-block;
     border-left: 1px solid #C0BAB6;
@@ -54,13 +54,7 @@ header #header-contato li:first-child{/* primeiro item remover a barra e as marg
     padding: 0;
     border: none;
 }
-div#topo{
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: left;   
-}
+
 #topo, #topo a{
     color: #C0BAB6;
     background-color: #333333;
@@ -90,9 +84,9 @@ nav ul{
     font-size: 12px;
 }
 nav li{
-    display: block;
     float: left;
     margin: 0 30px 0 0;
+    border: 1px solid red; /*somente para visualizar, depois remover*/
 }
 nav li a{
     display: block;
@@ -109,16 +103,22 @@ main{
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    /* border: 1px solid red; */
+    
+    display: flex;
+    flex-direction: row; /*column*/
+    justify-content: center; /*space-between || space-around*/
+    align-items: center; /*baseline || flex-end*/
+    flex-wrap: wrap;  /*   [nowrap | wrap | wrap-reverse]  diminiur a largura sem essa linha e com essa linha, sem essa linha diminui os elementos, com essa linha "wrap" cai o elementos */
+    row-gap: 10px;
+    column-gap: 40px;
+    border: 1px solid red;
 }
 .sectionMai{
-    width: 200px;
+    width: 190px;
     height: 300px;
-    float: left;
     border: 1px solid #CCC;
     border-radius: 20px;
     padding: 10px;
-    margin-right: 10px;
 }
 .sectionMai h1{
     text-align: center;
