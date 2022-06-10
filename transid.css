@@ -9,7 +9,7 @@ body{
 div#topo{
     width: 100%;
     height: auto;
-    border: 1px solid red; /*somente para visualizar, depois remover*/
+    /*border: 1px solid red; /*somente para visualizar, depois remover*/
 }
 header{
     width: 980px;
@@ -19,10 +19,10 @@ header{
     margin-right: auto;
     display: grid;
     grid-template-columns: 350px 630px;
-    border: 1px solid red; /*somente para visualizar, depois remover*/
+    /*border: 1px solid red; /*somente para visualizar, depois remover*/
 }
 header div{ /*somente para visualizar, depois remover*/
-    border: 1px solid black;
+   /* border: 1px solid black;*/
     
 }
 header #header-contato{
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6{
 #grupo h2{
     font-size: 1em;
 }
-/*fim - até aqui explicar de uma vez só*/
+/*fim - atï¿½ aqui explicar de uma vez sï¿½*/
 
 header #header-contato li{
     display: inline-block;
@@ -84,9 +84,10 @@ nav ul{
     font-size: 12px;
 }
 nav li{
-    float: left;
+    /* float: left; */
+    display: inline-block;
     margin: 0 30px 0 0;
-    border: 1px solid red; /*somente para visualizar, depois remover*/
+ /* border: 1px solid red; /*somente para visualizar, depois remover*/
 }
 nav li a{
     display: block;
@@ -111,26 +112,26 @@ main{
     flex-wrap: wrap;  /*   [nowrap | wrap | wrap-reverse]  diminiur a largura sem essa linha e com essa linha, sem essa linha diminui os elementos, com essa linha "wrap" cai o elementos */
     row-gap: 10px;
     column-gap: 40px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
-.sectionMai{
+.sectionMain{
     width: 190px;
     height: 300px;
     border: 1px solid #CCC;
     border-radius: 20px;
     padding: 10px;
 }
-.sectionMai h1{
+.sectionMain h1{
     text-align: center;
 }
-.sectionMai p{
+.sectionMain p{
     line-height: 20px;
     text-align: justify;
 }
-.sectionMai article{
+.sectionMain article{
     height: 250px;
 }
-.sectionMai footer{
+.sectionMain footer{
     text-align: center;
 }
 /*botoes do main article*/
