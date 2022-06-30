@@ -145,15 +145,72 @@ main{
 a.botao{
     color: #FFF;
     border: 1px solid;
+    border-radius: 5px;
 }
 .botao.saiba_mais_caminhoes{
     background: linear-gradient(to right, #C0E079, #98BA55);   
     text-shadow: 1px 1px 0 #000;
-    border-radius: 5px;
     border-color: #98Ba55;
 }
 .botao.saiba_mais_caminhoes:hover{
     color: #7C9B41;
     border-color: #7c9B41;
 }
+.botao.saiba_mais_rastreamento{
+    background: linear-gradient(to right, #56EED4, #1C546C);   
+    text-shadow: 1px 1px 0 #000;
+    border-color: #98Ba55;
+}
+.botao.saiba_mais_rastreamento:hover{
+    color: #7C9B41;
+    border-color: #7C9B41;
+}
+.botao.saiba_mais_smartphone{
+    background: linear-gradient(to right, #9f8199, #48344E);   
+    text-shadow: 1px 1px 0 #000;
+    border-color: #9f8199;
+}
+.botao.saiba_mais_smartphone:hover{
+    color: #7C9B41;
+    border-color: #7C9B41;
+}.botao.saiba_mais_avioes{
+    background: linear-gradient(to right, #d54346, #7a1b1d);   
+    text-shadow: 1px 1px 0 #000;
+    border-color: #9f8199;
+}
+.botao.saiba_mais_avioes:hover{
+    color: #7C9B41;
+    border-color: #7C9B41;
+}
+#sectionCliente{
+    width: 100%;
+    height: 420px;
+    background-color: #FFFFFF;
+}
+#sectionCliente h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#conteudoCliente{
+    border: 1px solid red;
+    height: 350px;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+}
+#conteudoCliente article{
+    margin: 10px;
+}
+#conteudoCliente figure img{
+    border: 4px solid #919191;
+    border-radius: 10px;
+}
+#conteudoCliente .text-cliente{
+    text-align: justify;
+    padding-top: 10px;
+    display: block;
+}
+/*continuar formtndo os outros*/
 
