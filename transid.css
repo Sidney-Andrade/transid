@@ -217,14 +217,14 @@ a.botao{
     height: 350px;
 }
 #rodape{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 980px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 #rodape_comentarios, #rodape_nav, #caixa_formulario{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 300px;
     height: 300px;
     float: left;
@@ -235,6 +235,7 @@ a.botao{
 }
 #rodape_nav li a{
     height: 25px;
+    padding: 10px 0;
 }
 #rodape_comentarios li{
     list-style: none;
@@ -254,7 +255,21 @@ a.botao{
 #caixa_formulario input, #caixa_formulario textarea{
     border-radius: 5px;
     padding-left: 5px;
+    width: 300px;
     color: #FFF;
     background-color: #333333;
     border: 1px solid #666666;
+}
+#rodape_nav ul{
+    display: grid;
+}
+#caixa_formulario input[type=submit],#caixa_formulario input[type=reset]{
+    width: 60px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: orange;
+
+}
+#caixa_formulario #botoes{
+    display: flex;
 }
