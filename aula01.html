@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Java Script</title>
+        <script>
+            console.log("Olá mundo");
+            const nome  = "Sidney";
+            //nome = "Maria";
+            let idade = 21;
+            idade = 22;
+            console.log("Olá " + nome + " você tem " + idade + " anos")
+
+            //alert("Olá " + nome);
+
+            const tabuada = 3;
+            for (let index = 1; index <= 10; index++) {
+                console.log(tabuada + " X " + index + " = " + tabuada*index)
+                
+            }
+
+            let tab = prompt("digite um numero");
+
+            if(tab > 0 && tab <= 10){
+                for (let index = 1; index <= 10; index++) {
+                console.log(tab + " X " + index + " = " + tab*index)
+                }
+            }else{
+                alert("Valor não permitido")
+            }
+            
+            let tabMultiplos = prompt("digite os numero separados com ponto e virgula (;)");
+            tabMultiplos = tabMultiplos.split(";");
+            console.log(tabMultiplos);
+
+            tabMultiplos.forEach(element => {
+                console.log(element)
+            });
+
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
+    
