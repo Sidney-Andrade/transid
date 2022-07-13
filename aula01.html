@@ -32,9 +32,12 @@
             console.log(tabMultiplos);
 
             tabMultiplos.forEach(element => {
-                console.log(element)
+                if(element > 0 && element <= 10){
+                    for (let index = 1; index <= 10; index++) {
+                    console.log(element + " X " + index + " = " + element*index)
+                    }
+                }
             });
-
         </script>
     </head>
     <body>
