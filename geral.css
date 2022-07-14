@@ -1,0 +1,16 @@
+.fim{
+    margin-bottom: 15px;
+    border-bottom: 2px solid #000;
+}
+.par{
+    background-color: #CCC;
+}
+.impar{ 
+    background-color: #CCC;
+}
+li{
+    list-style: none; 
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+}
