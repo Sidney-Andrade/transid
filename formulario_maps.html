@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Contatos</title>
+        <style>
+            main{
+                display: grid;
+                grid-template-columns: 550px 665px;
+            }
+            #form, #maps{
+                border: 1px solid #CCC;
+                border-radius: 5px;
+                margin: 15px;
+                padding: 15px;
+            }
+            #form{
+                color: #CCC;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            label{
+                display: block;
+                margin-bottom: 15px;
+            }
+            input, select{
+                width: 100%;
+                height: 30px;
+                padding: 5px;
+                margin-bottom: 15px;
+                color: #CCC;
+            }
+            input[type=radio], input[type=checkbox], input[type=submit], input[type=reset]{
+                width: auto;
+                height: auto;
+            }
+            h1{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="form">
+                <form action="">
+                    <h1>Dados pessoais</h1>
+                    
+                    <label>
+                        Nome:
+                        <input type="text" id="nome" name="nome" />
+                    </label>
+
+                    <label>
+                        E-Mail:
+                        <input type="email" id="email" name="email" />
+                    </label>
+                    
+                    <label>
+                        Sexo:
+                        <input type="radio" name="sexo" value="masculino">Masculino
+                        <input type="radio" name="sexo" value="feminino">Feminino
+                    </label>
+                    
+                    <label>
+                        Esporte:
+                        <input type="checkbox" name="esporte" value="Futebol">Futebol
+                        <input type="checkbox" name="esporte" value="Volei">Volei
+                        <input type="checkbox" name="esporte" value="Natação">Natação
+                    </label>
+                    
+                    <label>Mês de Nascimento</label>
+                    <select>
+                        <option>Escolha o mês</option>
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                    </select>
+                    
+                    <h1>Endereço</h1>
+
+                        <label>
+                            Cep:
+                            <input name="cep" type="text" id="cep" value="" maxlength="9" />
+                        </label>
+                        <label>
+                            Rua:
+                            <input name="rua" type="text" id="rua" />
+                        </label>
+                        <label>
+                            Bairro:
+                            <input name="bairro" type="text" id="bairro" />
+                        </label>
+                        <label>
+                            Cidade:
+                            <input name="cidade" type="text" id="cidade" />
+                        </label>
+                        <label>
+                            Estado:
+                            <input name="uf" type="text" id="uf" />
+                        </label>
+
+                        <input type="submit" value="Enviar" />
+                        <input type="reset" value="Limpar" />
+
+
+                    
+                </form>
+            </div>
+            <div id="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4204.759161423934!2d-48.54948408408791!3d-27.600755376009293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273831874b03cf%3A0x738d23b15d5cc78b!2sFaculdade%20Senac%20Florian%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1659634133512!5m2!1spt-BR!2sbr" width="600" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+    </body>
+</html>
